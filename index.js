@@ -23,7 +23,7 @@ const helmet = require("helmet");
 const MongoStore = require('connect-mongo');
 
 const dbUrl = process.env.MONGO_ATLAS_URL
-// const dbUrl = 'mongodb://127.0.0.1:27017/YelpCamp'
+
 
 
 mongoose.set('strictQuery', false)
