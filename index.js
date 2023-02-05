@@ -9,7 +9,6 @@ const mongoose = require('mongoose')
 const ejsMate = require('ejs-mate')
 const methodOverride = require('method-override')
 const AppError = require('./utilities/expressError')
-const cookieParser = require('cookie-parser')
 const session = require('express-session')
 const flash = require('connect-flash')
 const passport = require('passport')
@@ -22,7 +21,7 @@ const mongoSanitize = require('express-mongo-sanitize');
 const helmet = require("helmet");
 const MongoStore = require('connect-mongo');
 
-const dbUrl = process.env.MONGO_ATLAS_URL
+const dbUrl = process.env.MONGO_ATLAS_URL || 'mongodb://127.0.0.1:27017/YelpCamp'
 
 
 
