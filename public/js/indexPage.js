@@ -1,6 +1,8 @@
 const campgroundsCards = [...document.querySelectorAll('.campgroundCard')]
 const loadButton = document.querySelector('.loadButton')
 
+if(campgroundsCards.length < 11) loadButton.setAttribute('disabled', true)
+
 
 for (let i = 10; i < campgroundsCards.length; i++) {
     campgroundsCards[i].setAttribute('hidden', true)
